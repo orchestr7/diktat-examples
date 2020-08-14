@@ -1,0 +1,17 @@
+name: diktat usage
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run diktat with a gradle plugin
+      run: |
+        cd gradle
+        gradle diktatFormat
