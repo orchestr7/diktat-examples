@@ -11,4 +11,4 @@ Several examples of usage for diKTat project: https://github.com/cqfn/diKTat
 2) gradle: example of usge diktat with gradle plugin (see `build.gradle.kts`). To run it use: `$ gradle diktatCheck`
 
 ## Configuration file:
-Note, that you can specify and put `rules-config.json` that contains configuration of diktat in the parent directory of your project on the same level where build.gradle/pom.xml is stored.
+Note, that you can specify and put `diktat-analysis.yml` that contains configuration of diktat in the parent directory of your project on the same level where build.gradle/pom.xml is stored.
