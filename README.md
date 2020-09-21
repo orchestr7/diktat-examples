@@ -8,7 +8,7 @@ Several examples of usage for diKTat project: https://github.com/cqfn/diKTat
 
 ## What's inside:
 1) maven: example of usage diktat with maven plugin (see `pom.xml`). To run it use: `$ mvn antrun:run@diktat`.
-2) gradle: example of usge diktat with gradle plugin (see `build.gradle.kts`). To run it use: `$ gradle ktlintCheck`
+2) gradle: example of usge diktat with gradle plugin (see `build.gradle.kts`). To run it use: `$ gradle diktatCheck`
 
 ## Configuration file:
 Note, that you can specify and put `rules-config.json` that contains configuration of diktat in the parent directory of your project on the same level where build.gradle/pom.xml is stored.
