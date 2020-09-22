@@ -13,7 +13,6 @@ dependencies {
 
     // diktat ruleset
     ktlint("org.cqfn.diktat:diktat-rules:0.1.0") {
-        exclude("org.slf4j", "slf4j-log4j12")
     }
 }
 
