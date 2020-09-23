@@ -5,36 +5,18 @@
     <groupId>org.cqfn.diktat</groupId>
     <artifactId>diktat-maven</artifactId>
     <packaging>pom</packaging>
-	<version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
 
     <distributionManagement>
-        <repository>
-            <id>artipie</id>
-            <url>https://central.artipie.com/akuleshov7/diktat</url>
-        </repository>
         <snapshotRepository>
-            <id>artipie</id>
-            <url>https://central.artipie.com/akuleshov7/diktat</url>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
-    <repositories>
-        <!-- this is needed to use ktlint 0.37.1-fork -->
-        <repository>
-            <id>artipie</id>
-            <url>https://central.artipie.com/akuleshov7/diktat</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <!-- this is needed to use forked ktlint and diktat inside antrun plugin -->
-        <pluginRepository>
-            <id>artipie</id>
-            <url>https://central.artipie.com/akuleshov7/diktat</url>
-        </pluginRepository>
-    </pluginRepositories>
 
     <build>
-        <plugins>          
+        <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>
@@ -60,7 +42,7 @@
                     <dependency>
                         <groupId>com.pinterest</groupId>
                         <artifactId>ktlint</artifactId>
-                        <version>0.37.1-fork</version>
+                        <version>0.37.1</version>
                         <exclusions>
                             <exclusion>
                                 <groupId>com.pinterest.ktlint</groupId>
@@ -71,13 +53,7 @@
                     <dependency>
                         <groupId>org.cqfn.diktat</groupId>
                         <artifactId>diktat-rules</artifactId>
-                        <version>1.0.1</version>
-                        <exclusions>
-                            <exclusion>
-                                <groupId>org.slf4j</groupId>
-                                <artifactId>slf4j-log4j12</artifactId>
-                            </exclusion>
-                        </exclusions>
+                        <version>0.1.0</version>
                     </dependency>
                 </dependencies>
             </plugin>
